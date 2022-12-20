@@ -5,7 +5,7 @@
     --primary: #80997c;
     --secondary:#B5C99A;
     --background: #95A99B;
-    --backgroud-container: #FFFFFF;
+    --background-header: #FFFFFF;
 
     /* Tamanos de fuente */
     
@@ -21,21 +21,15 @@
 }
 
 .body{
-    background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.body-container{
-    background-color: var(--backgroud-container);
-    width: 90%;
-    height: auto;
-    margin-top: 20px;
-}
 
 .header{
     width: 100%;
+    background-color: var(--background-header);
     display: flex;
     justify-content: space-between;
     align-items: center;
