@@ -4,7 +4,7 @@
     /* Colores */
     --primary: #80997c;
     --secondary:#B5C99A;
-    --background: #EDEFF3;
+    --background: #95A99B;
     --backgroud-container: #FFFFFF;
 
     /* Tamanos de fuente */
@@ -27,10 +27,10 @@
     align-items: center;
 }
 
-.container{
+.body-container{
     background-color: var(--backgroud-container);
     width: 90%;
-    height: 500px;
+    height: auto;
     margin-top: 20px;
 }
 
@@ -40,7 +40,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    border-bottom: var(--background) 2px solid;
+    border-bottom: var(--background) 1px solid;
 }
 
 .img-logo{
