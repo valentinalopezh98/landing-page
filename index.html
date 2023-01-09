@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body class="body">
@@ -16,11 +19,13 @@
     <header class="header">
         <img src="./img/logo1.png" alt="logo" class="img-logo">
         <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
             <ul class="navbar-list">
                 <li><a href="">INICIO</a> </li>
                 <li><a href="">ADOPTA</a> </li>
                 <li><a href="">NOSOTROS</a> </li>
-                <li><a href="">CONTACTO</a> </li>
+                <li><a href="#contacto">CONTACTO</a> </li>
             </ul>
         </nav>
     </header>
@@ -41,9 +46,84 @@
     </section>
 
     <section class="info-text">
-        <h3>Descubrí nuestro plan de adopciones responsables</h3> 
+        <h2>Descubrí nuestro plan de adopciones responsables</h2> 
         <p>Paw Club nace para dar una segunda oportunidad a cientos de animales que han sido víctimas de maltrato y abandono. Promoviendo el amor, cuidado, respeto y protección al rescatar, recuperar, rehabilitar y entregar en adopción.</p>
     </section>
+
+    <section class="card-section">
+
+        <h2>¿Por qué adoptar en Paw Club?</h2>
+        <p>Descubre los beneficios de adoptar una mascota de nuestro refugio</p>
+
+        <div class="cards">
+
+            <div class="card card1">
+                <i class="fa-solid fa-house-medical fa-3x icon"></i>
+                <h3>Castradas y saludables</h3>
+                <p>Todas las mascotas del refugio fueron atendidos por un veterinario y se encuentran en excelente estado de salud, ademas nuestros animalitos fueron castrados para que puedan ser adoptados responsablemente </p>
+            </div>
+
+            <div class="card card2">
+                <i class="fa-solid fa-people-roof fa-3x icon"></i>
+                <h3>Mascotas domesticadas</h3>
+                <p>Las mascotas adoptables a menudo ya están domesticadas, son buenas con los niños y les va bien con otras mascotas debido a que muchas vienen de hogares que ya no pueden cuidarlas y otras adoptaron esas costumbres en el refugio </p>
+            </div>
+
+            <div class="card card3">
+                <i class="fa-solid fa-paw fa-3x icon"></i>
+                <h3>Variedad de animalitos</h3>
+                <p>El refugio cuenta con perros y gatos de todas las edades para que puedas encontrar a tu compañero ideal</p>
+            </div>
+
+        </div>
+
+    </section>
+
+   <section class="contact-section" id="contacto">
+
+        <div class="contact-left">
+            <h2>Contactanos</h2>
+
+            <div class="contact-info">
+
+                <div class="contact-info-left">
+
+                    <h3>Camila Benza</h3>
+                    <span><i class="fa-solid fa-location-dot icon1"></i> Julian Alvarez 1530, CABA</span>
+                    <span><i class="fa-regular fa-envelope icon1"></i> camilabenza@gmail.com</span>
+                    <span><i class="fa-solid fa-phone icon1"></i> 11 56565656 </span>
+    
+                </div>
+    
+                <div class="contact-info-right">
+    
+                    <h3>Alejandro Dominguez</h3>
+                    <span><i class="fa-solid fa-location-dot icon1"></i> Cuba 2530, CABA</span>
+                    <span><i class="fa-regular fa-envelope icon1"></i> alejandrodominguez@gmail.com</span>
+                    <span><i class="fa-solid fa-phone icon1"></i> 11 23232323 </span>
+    
+                </div>
+
+            </div>
+
+
+            <div class="redes-sociales">
+                <a href="#"><i class="fa-brands fa-twitter icon2 fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook icon2 fa-2x"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram icon2 fa-2x"></i></a> 
+
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <img src="./img/hero1.png" alt="">
+        </div>
+
+   </section>
+
+   <footer class="footer">
+        <img src="./img/logo1.png" alt="logo">
+   </footer>
   </main>
 </body>
 </html>

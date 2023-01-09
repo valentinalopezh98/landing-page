@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    /* Colores */
+    --primary: #EC664F;
+    --secondary:#95A99B;
+    --background: white;
+    --text: black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+@media (max-width: 1200px){
+    .hero-left{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-left h1{
+        text-align: center;
+    }
+
+    .hero-left p{
+        text-align: center;
+    }
+
+    .hero-right{
+        display: none;
+    }
+
+    .info-text h2{
+        text-align: center;
+    }
+
+    .info-text p{
+        text-align: center;
+    }
+
+    .card-section{
+        text-align: center;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        height: 300px;
+        min-width: 300px;
+    }
+
+    .contact-section{
+        height: auto;
+    }
+
+    .contact-left{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .contact-right{
+        display: none;
+    }
+
+    .contact-info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info-left,
+    .contact-info-right{
+        justify-content: center;
+        align-items: flex-start;
+        margin: 20px 0;
+    }
+    
+    .footer{
+        margin-top: 50px;
+    }
+
+    @media (max-width: 600px){
+        
+        p{
+            font-size: 1.5rem;
+        }
+
+        .hero-left h1{
+            font-size: 4rem;
+        }
+
+        h2{
+            font-size: 2.3rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+        .navbar i{
+            display: block;
+        }
+
+        .navbar-list{
+            background-color: var(--background);
+            width: 100%;
+            height: calc(100vh - 60px);
+            position: absolute;
+            top: 60px;
+            left: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(200%);
+            transition: all 0.4s ease-out;
+        }
+
+        #toggle-menu:checked + .navbar-list{
+            transform: translateX(0);
+            transition: all 0.4s ease-in;
+        }
+
+        .info-text{
+            padding: 0;
+        }
+
+        .info-text p{
+            text-align: center;
+        }
+    }
+}
